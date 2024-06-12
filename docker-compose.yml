@@ -1,0 +1,9 @@
+services:
+  site:
+    build: .
+    working_dir: /var/www
+    command: php -S 0.0.0.0:8081 -t public
+    environment:
+      docker: "true"
+    ports:
+    - 8081:8081
